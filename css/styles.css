@@ -248,6 +248,10 @@ img {
 .modal-close:focus {
   fill: var(--цвет-фокуса);
 }
+/*---✌️MODAL FORM Страницы🤞--*/
+.modal-form {
+  padding: 0, 40px;
+}
 /*--✌️Характеристики Страницы🤞---*/
 .is-hidden {
   position: absolute;
