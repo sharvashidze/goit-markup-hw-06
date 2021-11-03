@@ -82,12 +82,35 @@
             <!--✌️MODAL FORM Страницы🤞-->
             <form class="modal-form">
               <p>Оставьте свои данные, мы вам перезвоним</p>
-              <label for="use-name">Имя</label>
-              <input type="text" name="use-name" id="use-name" />
-              <label for="telephone">Телефон</label>
-              <input type="tel" name="telephone" id="telephone" />
-              <label for="use-email">Почта</label>
-              <input type="email" name="use-email" id="use-email" />
+              <div class="form-group">
+                <label for="use-name">Имя</label>
+                <input type="text" name="use-name" id="use-name" />
+              </div>
+              <div class="form-group">
+                <label for="telephone">Телефон</label>
+                <input type="tel" name="telephone" id="telephone" />
+              </div>
+              <div class="form-group">
+                <label for="use-email">Почта</label>
+                <input type="email" name="use-email" id="use-email" />
+              </div>
+              <div class="form-group">
+                <label for="coments">Комментарий</label>
+                <textarea
+                  name="coments"
+                  id="coments"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+              </div>
+              <div class="form-group">
+                <input type="checkbox" name="agree" id="agree" />
+                <label for="agree"
+                  >Соглашаюсь с рассылкой и принимаю
+                  <a href="" class="egree">Условия договора</a></label
+                >
+              </div>
+              <button type="submit">Отправить</button>
             </form>
           </div>
         </div>

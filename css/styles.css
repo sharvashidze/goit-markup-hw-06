@@ -250,7 +250,13 @@ img {
 }
 /*---✌️MODAL FORM Страницы🤞--*/
 .modal-form {
-  padding: 0, 40px;
+  padding: 0 40px 40px;
+}
+textarea {
+  resize: none;
+}
+.egree {
+  text-decoration: underline;
 }
 /*--✌️Характеристики Страницы🤞---*/
 .is-hidden {
