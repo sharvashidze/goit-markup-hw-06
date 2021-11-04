@@ -81,31 +81,57 @@
             </button>
             <!--✌️MODAL FORM Страницы🤞-->
             <form class="modal-form">
-              <p>Оставьте свои данные, мы вам перезвоним</p>
+              <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
               <div class="form-group">
-                <label for="use-name">Имя</label>
-                <input type="text" name="use-name" id="use-name" />
+                <label for="use-name" class="label-name">Имя</label>
+                <input
+                  type="text"
+                  name="use-name"
+                  id="use-name"
+                  class="input-name"
+                />
               </div>
               <div class="form-group">
-                <label for="telephone">Телефон</label>
-                <input type="tel" name="telephone" id="telephone" />
+                <label for="telephone" class="label-name">Телефон</label>
+                <input
+                  type="tel"
+                  name="telephone"
+                  id="telephone"
+                  class="input-name"
+                />
               </div>
               <div class="form-group">
-                <label for="use-email">Почта</label>
-                <input type="email" name="use-email" id="use-email" />
+                <label for="use-email" class="label-name">Почта</label>
+                <input
+                  type="email"
+                  name="use-email"
+                  id="use-email"
+                  class="input-name"
+                />
               </div>
               <div class="form-group">
-                <label for="coments">Комментарий</label>
+                <label for="coments" class="label-name">Комментарий</label>
                 <textarea
                   name="coments"
                   id="coments"
                   cols="30"
                   rows="10"
+                  class="text-area"
+                  placeholder="Введите текст"
                 ></textarea>
               </div>
               <div class="form-group">
-                <input type="checkbox" name="agree" id="agree" />
-                <label for="agree"
+                <input
+                  type="checkbox"
+                  name="agree"
+                  id="agree"
+                  class="check-box"
+                />
+                <label for="agree" class="label-text"
+                  ><svg width="12" height="12">
+                    <use
+                      href="./images/symbol-defs.svg#icon-chekbox"
+                    ></use></svg
                   >Соглашаюсь с рассылкой и принимаю
                   <a href="" class="egree">Условия договора</a></label
                 >
