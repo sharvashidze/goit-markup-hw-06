@@ -227,11 +227,12 @@ img {
   border-radius: 4px;
 }
 .modal-x {
-  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  margin-left: auto;
   margin-right: 8px;
   margin-top: 8px;
   background: var(--цвет-фона);
@@ -249,7 +250,9 @@ img {
 }
 /*---✌️MODAL FORM Страницы🤞--*/
 .modal-form {
-  padding: 0 40px 40px;
+  padding: 40px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .modal-title {
@@ -261,8 +264,12 @@ img {
   letter-spacing: 0.03em;
   color: var(--цвет-текста);
 }
-.modal-form .label-name {
+.form-group {
   display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.label-name {
   height: 14px;
   width: 25px;
   font-size: 12px;
@@ -271,23 +278,22 @@ img {
   color: var(--основной-цвет);
   margin-bottom: 4px;
 }
-.modal-form .input-name {
-  display: flex;
-  position: relative;
+.input-name {
   height: 40px;
-  width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  margin-bottom: 10px;
 }
-
-.modal-form .text-area {
+.form-textarea {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.text-area {
   resize: none;
   width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding: 12px 16px;
-  margin-bottom: 20px;
 }
 .text-area::placeholder {
   font-size: 14px;
@@ -305,11 +311,9 @@ img {
   letter-spacing: 0.03em;
   color: var(--основной-цвет);
 }
-.check-box {
-  margin-bottom: 30px;
-}
-.modal-form:focus .input-name {
-  background-color: #2196f3;
+.check-box checkbox {
+  display: flex;
+  align-items: center;
 }
 /*--✌️Характеристики Страницы🤞---*/
 .is-hidden {
