@@ -251,6 +251,7 @@ img {
 .modal-form {
   padding: 0 40px 40px;
 }
+
 .modal-title {
   margin-bottom: 12px;
   font-weight: 700;
@@ -306,6 +307,9 @@ img {
 }
 .check-box {
   margin-bottom: 30px;
+}
+.modal-form:focus .input-name {
+  background-color: #2196f3;
 }
 /*--✌️Характеристики Страницы🤞---*/
 .is-hidden {
