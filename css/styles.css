@@ -268,6 +268,7 @@ img {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
+  position: relative;
 }
 .label-name {
   height: 14px;
@@ -282,6 +283,23 @@ img {
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  padding: 12px 0 12px 42px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.input-name:focus {
+  outline: none;
+  border: 1px solid var(--цвет-фокуса);
+}
+.input-name:focus + .input-icon {
+  fill: var(--цвет-фокуса);
+}
+.input-icon {
+  position: absolute;
+  display: inline-block;
+  top: 70%;
+  transform: translateY(-70%);
+  left: 15px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-textarea {
   display: flex;
@@ -291,9 +309,15 @@ img {
 .text-area {
   resize: none;
   width: 100%;
+  height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding: 12px 16px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.text-area:focus {
+  outline: none;
+  border: 1px solid var(--цвет-фокуса);
 }
 .text-area::placeholder {
   font-size: 14px;
@@ -310,10 +334,40 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--основной-цвет);
+  margin-left: 9px;
 }
-.check-box checkbox {
+.check-box {
   display: flex;
+  position: relative;
   align-items: center;
+  margin-bottom: 30px;
+}
+.icon-chekbox {
+  position: absolute;
+}
+
+.btn-submit {
+  display: inline-block;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  padding: 10px 56px;
+  border-radius: 4px;
+  border-style: none;
+  color: var(--цвет-фона);
+  background-color: var(--цвет-фокуса);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-submit:hover,
+.btn-submit:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background-color: var(--цвет-кнопки-ховер);
 }
 /*--✌️Характеристики Страницы🤞---*/
 .is-hidden {
