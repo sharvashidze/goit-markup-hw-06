@@ -644,6 +644,9 @@ img {
 .footer-icon {
   display: flex;
 }
+.footer-icons {
+  margin-right: 93px;
+}
 .footer-link {
   display: inline-flex;
   justify-content: center;
@@ -660,9 +663,7 @@ img {
 .footer-link:hover {
   background-color: var(--цвет-фокуса);
 }
-.slogan {
-  margin-left: 93px;
-}
+
 .slogan-title {
   font-weight: 700;
   font-size: 14px;

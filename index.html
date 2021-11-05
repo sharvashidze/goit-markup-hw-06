@@ -534,16 +534,23 @@
             </li>
           </ul>
         </div>
-        <div class="slogan">
+        <form class="slogan">
           <p class="slogan-title">Подпишитесь на рассылку</p>
-          <input type="email" class="slogan-input" placeholder="E-mail" />
+          <label for="E-mail"></label>
+          <input
+            type="email"
+            class="slogan-input"
+            placeholder="E-mail"
+            id="E-mail"
+            name="E-mail"
+          />
           <button type="submit" class="slogan-btn">
             Подписаться
             <svg width="24" height="24" class="slogan-icon">
               <use href="./images/symbol-defs.svg#icon-icon-send"></use>
             </svg>
           </button>
-        </div>
+        </form>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
