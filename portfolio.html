@@ -340,13 +340,15 @@
             </li>
           </ul>
         </div>
-        <div class="slogan">
+        <form class="slogan">
           <p class="slogan-title">Подпишитесь на рассылку</p>
+          <label for="E-mail"></label>
           <input
             type="email"
             class="slogan-input"
-            id="use-email"
             placeholder="E-mail"
+            id="E-mail"
+            name="E-mail"
           />
           <button type="submit" class="slogan-btn">
             Подписаться
@@ -354,7 +356,7 @@
               <use href="./images/symbol-defs.svg#icon-icon-send"></use>
             </svg>
           </button>
-        </div>
+        </form>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
