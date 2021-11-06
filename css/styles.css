@@ -228,6 +228,9 @@ img {
 }
 .modal-x {
   position: absolute;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   top: 0;
   right: 0;
   width: 30px;
@@ -238,14 +241,13 @@ img {
   background: var(--цвет-фона);
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
+
 .modal-close {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: absolute;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-close:hover,
-.modal-close:focus {
+.modal-x:hover .modal-close,
+.modal-x:focus .modal-close {
   fill: var(--цвет-фокуса);
 }
 /*---✌️MODAL FORM Страницы🤞--*/
@@ -665,9 +667,7 @@ img {
 .footer-icon {
   display: flex;
 }
-.footer-icons {
-  margin-right: 93px;
-}
+
 .footer-link {
   display: inline-flex;
   justify-content: center;
@@ -684,7 +684,9 @@ img {
 .footer-link:hover {
   background-color: var(--цвет-фокуса);
 }
-
+.slogan {
+  margin-left: auto;
+}
 .slogan-title {
   font-weight: 700;
   font-size: 14px;
@@ -697,16 +699,17 @@ img {
 .slogan-input {
   width: 358px;
   height: 50px;
-  color: var(--основной-цвет);
+  color: var(--цвет-фона);
   background-color: var(--цвет-футер-фон);
   border-radius: 4px;
   outline: none;
   border: 1px solid rgba(255, 255, 255, 0.3);
   margin-right: 12px;
+  padding: 15px 0 15px 16px;
 }
 .slogan-input:focus {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  background-color: var(--цвет-иконок);
+  background-color: var(--цвет-футер-фон);
 }
 .slogan-btn {
   display: inline-flex;
