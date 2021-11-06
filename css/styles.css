@@ -12,6 +12,7 @@ body {
   --цвет-секции: #f5f4fa;
   --цвет-футер-фон: #2f303a;
   --цвет-кнопки-ховер: #188ce8;
+  --color-border-header: #ececec;
 }
 a {
   text-decoration: none;
@@ -47,7 +48,7 @@ img {
 }
 /*--✌️Шапка Страницы🤞--*/
 .main-header {
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid var(--color-border-header);
 }
 .page-header {
   display: flex;
